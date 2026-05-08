@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUAD | Your Best Performance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="BoltForMan Logo">
+            </div>
+            <nav class="desktop-nav">
+                <a href="#science">Science</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#testimonials">Testimonials</a>
+            </nav>
+            <div class="cta-container">
+                <a href="#get-started" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <div class="hero-left">
+                <div class="trustpilot-rating">
+                    <span>Excellent 4.5 out of 5</span>
+                    <div class="stars">
+                        <img src="assets/trustpilot-star.svg" alt="Star">
+                        <img src="assets/trustpilot-star.svg" alt="Star">
+                        <img src="assets/trustpilot-star.svg" alt="Star">
+                        <img src="assets/trustpilot-star.svg" alt="Star">
+                        <img src="assets/trustpilot-star.svg" alt="Star">
+                    </div>
+                    <strong>Trustpilot</strong>
+                </div>
+                <h1 class="hero-title">
+                    <span class="block">Speed.</span>
+                    <span class="gradient-text">Strength.</span> stamina.
+                </h1>
+                <div class="usa-made">
+                    <img src="assets/usa-flag.svg" alt="USA Flag">
+                    <span>USA Made, Clinician Prescribed</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <p class="hero-description">
+                    The world's first 4-in-1 formula that activates your desire and your body.<br>
+                    Fast-acting, clinician-prescribed, and delivered discreetly.
+                </p>
+                <a href="#qualify" class="btn btn-white btn-icon">
+                    SEE IF YOU QUALIFY
+                    <span class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Bar -->
+    <section class="logo-bar reveal-on-scroll">
+        <div class="logo-scroll">
+            <!-- First set -->
+            <img src="assets/press-1.svg" alt="Press Logo">
+            <img src="assets/press-3.png" alt="Press Logo">
+            <img src="assets/press-4.png" alt="Press Logo">
+            <img src="assets/press-5.png" alt="Press Logo">
+            <img src="assets/press-6.png" alt="Press Logo">
+            <img src="assets/press-7.png" alt="Press Logo">
+            <img src="assets/press-2.svg" alt="Press Logo">
+            <!-- Second set for seamless scroll -->
+            <img src="assets/press-1.svg" alt="Press Logo">
+            <img src="assets/press-3.png" alt="Press Logo">
+            <img src="assets/press-4.png" alt="Press Logo">
+            <img src="assets/press-5.png" alt="Press Logo">
+            <img src="assets/press-6.png" alt="Press Logo">
+            <img src="assets/press-7.png" alt="Press Logo">
+            <img src="assets/press-2.svg" alt="Press Logo">
+        </div>
+    </section>
+
+    <!-- 4-in-1 Breakthrough -->
+    <section class="breakthrough bg-light reveal-on-scroll">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">THE 4-IN-1 BREAKTHROUGH</span>
+                <h2 class="title">Ready Faster, <br><span class="gradient-text">Lasts All Weekend.</span></h2>
+                <p class="description">Pills are slow. Our rapid-absorb liquid goes under your tongue and hits your
+                    system in 10 minutes.</p>
+            </div>
+
+            <div class="quad-power-container">
+                <button class="nav-arrow prev-arrow" id="quad-prev" aria-label="Previous card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <div class="stacked-cards" id="quad-stack">
+                    <!-- Spacer Card (Hidden but maintains height) -->
+                    <div class="quad-power-card spacer"
+                        style="visibility: hidden; position: relative; pointer-events: none;">
+                        <div class="card-header text-center">
+                            <h3>Quad-Power</h3>
+                            <p>$12/dose</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/quad-power.png" alt="Quad Power Pouch">
+                        </div>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> Sildenafil + Tadalifil + Vardenafil + Apomorphine
+                            </li>
+                            <li><span class="icon-gradient">↑</span> 10 Doses Per Month</li>
+                            <li><span class="icon-gradient">↑</span> Priority Medical Review</li>
+                            <li><span class="icon-gradient">↑</span> Free Bolt-Fast Shipping</li>
+                        </ul>
+                    </div>
+
+                    <!-- Front Card -->
+                    <div class="quad-power-card card-item position-front" id="card-1">
+                        <div class="card-header text-center">
+                            <h3>Quad-Power</h3>
+                            <p>$12/dose</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/quad-power.png" alt="Quad Power Pouch">
+                        </div>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> Sildenafil + Tadalifil + Vardenafil + Apomorphine
+                            </li>
+                            <li><span class="icon-gradient">↑</span> 10 Doses Per Month</li>
+                            <li><span class="icon-gradient">↑</span> Priority Medical Review</li>
+                            <li><span class="icon-gradient">↑</span> Free Bolt-Fast Shipping</li>
+                        </ul>
+                    </div>
+
+                    <!-- Left Tilted Card -->
+                    <div class="quad-power-card card-item position-left" id="card-2">
+                        <div class="card-header text-center">
+                            <h3>Quad-Power</h3>
+                            <p>$12/dose</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/quad-power.png" alt="Quad Power Pouch">
+                        </div>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> Sildenafil + Tadalifil + Vardenafil + Apomorphine
+                            </li>
+                            <li><span class="icon-gradient">↑</span> 10 Doses Per Month</li>
+                            <li><span class="icon-gradient">↑</span> Priority Medical Review</li>
+                            <li><span class="icon-gradient">↑</span> Free Bolt-Fast Shipping</li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Tilted Card -->
+                    <div class="quad-power-card card-item position-right" id="card-3">
+                        <div class="card-header text-center">
+                            <h3>Quad-Power</h3>
+                            <p>$12/dose</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/quad-power.png" alt="Quad Power Pouch">
+                        </div>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> Sildenafil + Tadalifil + Vardenafil + Apomorphine
+                            </li>
+                            <li><span class="icon-gradient">↑</span> 10 Doses Per Month</li>
+                            <li><span class="icon-gradient">↑</span> Priority Medical Review</li>
+                            <li><span class="icon-gradient">↑</span> Free Bolt-Fast Shipping</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="nav-arrow next-arrow" id="quad-next" aria-label="Next card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-value">15 min</h3>
+                    <p class="stat-label">ACTIVATION TIME</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">4</h3>
+                    <p class="stat-label">Powerful Ingredients</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">36 hr</h3>
+                    <p class="stat-label">Response Window</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Quad Advantage -->
+    <section class="quad-advantage bg-light reveal-on-scroll">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">THE QUAD ADVANTAGE</span>
+                <h2 class="title">Engineered <br class="mobile-only"><span class="gradient-text">for your body.</span>
+                </h2>
+                <p class="description">Sex doesn't happen on a schedule. Your treatment shouldn't either</p>
+            </div>
+
+            <div class="advantage-cards">
+                <!-- Melts in Minutes -->
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="assets/melts-in-minutes.png" alt="Melts in Minutes">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Melts in Minutes</h3>
+                        <p>QUAD® is a rapid-absorb liquid that dissolves under your tongue. This bypasses the stomach
+                            and liver, allowing the medicine to hit your bloodstream much faster than swallowed pills.
+                        </p>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> No more waiting 60+ minutes</li>
+                            <li><span class="icon-gradient">↑</span> Works in as little as 15 minutes</li>
+                            <li><span class="icon-gradient">↑</span> Total, discreet control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dinner and Performance -->
+                <div class="feature-card reverse">
+                    <div class="feature-content">
+                        <h3>Dinner and Performance.</h3>
+                        <p>Standard pills can be rendered useless by a heavy meal. Our sublingual absorption means you
+                            don't have to choose between a great dinner and a great night.</p>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> Won't be blocked by food</li>
+                            <li><span class="icon-gradient">↑</span> No more "empty stomach" rules</li>
+                            <li><span class="icon-gradient">↑</span> Restores true spontaneity</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img src="assets/dinner-and-performance.png" alt="Dinner and Performance">
+                    </div>
+                </div>
+
+                <!-- Ready When You Are -->
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="assets/ready-when-you-are.png" alt="Ready When You Are">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Ready When You Are.</h3>
+                        <p>With Tadalafil onboard, one dose doesn't just work for "right now"—it keeps you responsive
+                            for up to 36 hours.</p>
+                        <ul class="benefit-list">
+                            <li><span class="icon-gradient">↑</span> No more "pill timing" anxiety</li>
+                            <li><span class="icon-gradient">↑</span> Lasts all weekend</li>
+                            <li><span class="icon-gradient">↑</span> Be ready for a second round (or third)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Delivered -->
+    <section class="performance-delivered reveal-on-scroll">
+        <img src="assets/section2.jpg" alt="Performance Background" class="performance-bg-img">
+        <div class="container performance-container">
+            <div class="performance-content">
+                <span class="subtitle">THE QUAD ADVANTAGE</span>
+                <h2 class="huge-title">your best perfomance. <br><span class="delivered-text">Delivered</span></h2>
+                <div class="performance-desc">
+                    <p>The world’s first 4-in-1 formula that activates your desire and your body. Fast-acting,
+                        clinician-prescribed, and delivered discreetly.</p>
+                </div>
+                <a href="#qualify" class="btn btn-white btn-icon mt-4">
+                    GET STARTED
+                    <span class="icon-circle" style="background: var(--primary-gradient); color: white;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Settle -->
+    <section class="why-settle bg-light reveal-on-scroll">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">THE QUAD ADVANTAGE</span>
+                <h2 class="title">Why Settle for an <br><span class="gradient-text">Incomplete Formula?</span></h2>
+                <p class="description">See how QUAD's 4-in-1 formula stacks up</p>
+            </div>
+
+            <div class="comparison-card">
+                <h3>Old Way vs. The QUAD Way</h3>
+                <p class="desc">Combines the active ingredients in Viagra, Cialis, and Levitra—plus
+                    Apomorphine to drive desire.</p>
+
+                <div class="quad-formula-box">
+                    <div class="quad-formula-header">
+                        <h4>QUAD's 4-in-1</h4>
+                    </div>
+                    <div class="ingredients-row">
+                        <div class="ingredient">Vardenafil</div>
+                        <div class="ingredient">Sildenafil</div>
+                        <div class="ingredient">Apomorphine</div>
+                        <div class="ingredient">Tadalafil</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Pricing -->
+    <section class="pricing-section reveal-on-scroll" id="pricing">
+        <div class="container">
+            <div class="section-header text-left">
+                <span class="subtitle-small">HOSPITAL-GRADE POWER WITHOUT THE MARKUP.</span>
+                <h2 class="title">THE POWER OF 4 MEDS. <br><span class="orange-text">IN 1 DOSE.</span></h2>
+                <p class="description">Get the advanced 4-in-1 formula prescribed without the markup. We cut out the
+                    middleman to deliver hospital-grade power directly to your door. No lines. No awkwardness. Just
+                    results.</p>
+            </div>
+
+            <div class="pricing-middle-row">
+                <div class="formula-details-card">
+                    <span class="card-subtitle">4-IN-1 PERFORMANCE</span>
+                    <h3 class="card-title orange-text">QUAD-POWER</h3>
+                    <div class="ingredient-boxes">
+                        <div class="ingredient-box">
+                            <span class="check-circle">✓</span>
+                            <div class="text">
+                                <strong>APOMORPHINE</strong>
+                                <span>Ignites Desire</span>
+                            </div>
+                        </div>
+                        <div class="ingredient-box">
+                            <span class="check-circle">✓</span>
+                            <div class="text">
+                                <strong>VARDENAFIL</strong>
+                                <span>Rapid Onset</span>
+                            </div>
+                        </div>
+                        <div class="ingredient-box">
+                            <span class="check-circle">✓</span>
+                            <div class="text">
+                                <strong>SILDENAFIL</strong>
+                                <span>Peak Strength</span>
+                            </div>
+                        </div>
+                        <div class="ingredient-box">
+                            <span class="check-circle">✓</span>
+                            <div class="text">
+                                <strong>TADALAFIL</strong>
+                                <span>Lasts 36 Hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <img src="assets/bottle.png" alt="Quad Power Bottle">
+                </div>
+            </div>
+
+            <div class="pricing-bottom-card">
+                <div class="bottom-card-top">
+                    <div class="price-section">
+                        <span class="starting-at">STARTING AT</span>
+                        <div class="price-display">
+                            <span class="price-now">$114</span>
+                            <span class="price-was">$179</span>
+                            <span class="save-pill">
+                                <span class="save-label">Bundle & Save More:</span>
+                                <span class="save-amount">36% Off Retail</span>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="popular-badge">MOST POPULAR</span>
+                </div>
+                <div class="bottom-card-benefits">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">›</span>
+                        Doctor Consultation Included
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">›</span>
+                        Free Rush Shipping
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">›</span>
+                        24/7 Medical Support
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">›</span>
+                        Cancel Anytime
+                    </div>
+                </div>
+                <p class="risk-free-small">Risk-Free: If you don't qualify, you don't pay</p>
+            </div>
+
+            <div class="pricing-cta-wrap">
+                <a href="#qualify" class="btn-black-pill">
+                    GET STARTED
+                    <span class="cta-circle">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works reveal-on-scroll" id="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">HOW IT WORKS</span>
+                <h2 class="title">3 Steps <br><span class="gradient-text">to Total Confidence</span></h2>
+            </div>
+
+            <div class="steps-wrapper mt-4">
+                <div class="step-card">
+                    <span class="subtitle">Step 1</span>
+                    <h3>Online Visit</h3>
+                    <p>Answer a few questions on our secure intake form. It takes 3 minutes.</p>
+                </div>
+                <div class="step-card">
+                    <span class="subtitle">Step 2</span>
+                    <h3>Doctor Approval</h3>
+                    <p>A US-licensed doctor reviews your case within 24 hours. If approved, your script is issued
+                        instantly.</p>
+                </div>
+                <div class="step-card">
+                    <span class="subtitle">Step 3</span>
+                    <h3>Fast Discreet Delivery</h3>
+                    <p>Your treatment arrives in a plain, unmarked package. Free rush shipping included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section bg-light reveal-on-scroll" id="faq">
+        <div class="container">
+            <div class="section-header text-left">
+                <span class="subtitle">HOW IT WORKS</span>
+                <h2 class="title">Your Questions, <br><span class="gradient-text">Answered...</span></h2>
+            </div>
+
+            <div class="faq-accordion mt-4">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h3>Is mixing ingredients safe?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Yes. This is a "Compound Medication." It is professionally formulated by US pharmacists
+                                and prescribed by licensed doctors specifically to ensure the dosages are safe,
+                                effective, and tailored to your history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Why choose Bolt over Hims or Roman?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Bolt is the only platform offering the QUAD 4-in-1 formula. While others offer standard
+                                pills, we provide a clinically-tailored sublingual liquid that works faster and contains
+                                all four key ingredients in a single dose.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will I be erect for 36 hours straight?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>No. Tadalafil stays in your system for up to 36 hours, but it only works when you are
+                                naturally aroused. You remain in control, with the medication simply ensuring your body
+                                is ready when you are.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I use QUAD?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Simply place the recommended dose under your tongue and hold it for 30-60 seconds before
+                                swallowing. This allows for direct absorption into the bloodstream, bypassing the
+                                digestive system for faster results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Why is it only $114?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>We eliminated the high-end retail markups, pharmacy middlemen, and expensive celebrity
+                                endorsements common in the industry. By shipping directly from our US-compounding labs
+                                to you, we pass those savings on, ensuring you get a 4-in-1 formula for less than the
+                                cost of a single-ingredient pill elsewhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials reveal-on-scroll" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Testimonials</span>
+                <h2 class="title"><span class="gradient-text">Verified Results</span><br>from 5,000+ Men</h2>
+            </div>
+
+            <div class="testimonials-scroll mt-4">
+                <div class="testimonials-track">
+                    <!-- Original 9 Cards -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"I've tried other products, but nothing compares to Bolt. The combination of
+                            medicines works perfectly together, and the difference is incredible."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Sam S.">
+                            <div class="author-info">
+                                <strong>Sam S.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"The sublingual liquid is a game changer. No more waiting an hour for pills to
+                            kick in. Bolt works in minutes and lasts all night."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="David R.">
+                            <div class="author-info">
+                                <strong>David R.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"Finally a formula that actually addresses everything. The 4-in-1 approach is
+                            genius. My confidence has never been higher."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Michael B.">
+                            <div class="author-info">
+                                <strong>Michael B.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"Best decision I ever made for my relationship. The quality is top-tier and the
+                            discreet shipping is a huge plus."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Chris T.">
+                            <div class="author-info">
+                                <strong>Chris T.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"I was skeptical about a liquid formula, but it's so much more effective than
+                            the pills I was getting from my local pharmacy."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="James L.">
+                            <div class="author-info">
+                                <strong>James L.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"The doctor consultation was seamless and professional. I felt heard and the
+                            prescription was exactly what I needed."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Robert M.">
+                            <div class="author-info">
+                                <strong>Robert M.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"Incredible value for a 4-in-1 formula. I used to pay more for just Sildenafil.
+                            Bolt is a much better deal."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Mark H.">
+                            <div class="author-info">
+                                <strong>Mark H.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"The 36-hour window with Tadalafil in the mix gives me so much peace of mind.
+                            No more timing everything perfectly."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Steven P.">
+                            <div class="author-info">
+                                <strong>Steven P.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"My partner and I are both thrilled with the results. It's brought back a level
+                            of spontaneity we haven't had in years."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Kevin W.">
+                            <div class="author-info">
+                                <strong>Kevin W.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"I've tried other products, but nothing compares to Bolt. The combination of
+                            medicines works perfectly together, and the difference is incredible."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Sam S.">
+                            <div class="author-info">
+                                <strong>Sam S.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"The sublingual liquid is a game changer. No more waiting an hour for pills to
+                            kick in. Bolt works in minutes and lasts all night."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="David R.">
+                            <div class="author-info">
+                                <strong>David R.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"Finally a formula that actually addresses everything. The 4-in-1 approach is
+                            genius. My confidence has never been higher."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Michael B.">
+                            <div class="author-info">
+                                <strong>Michael B.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"Best decision I ever made for my relationship. The quality is top-tier and the
+                            discreet shipping is a huge plus."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Chris T.">
+                            <div class="author-info">
+                                <strong>Chris T.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"I was skeptical about a liquid formula, but it's so much more effective than
+                            the pills I was getting from my local pharmacy."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="James L.">
+                            <div class="author-info">
+                                <strong>James L.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"The doctor consultation was seamless and professional. I felt heard and the
+                            prescription was exactly what I needed."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Robert M.">
+                            <div class="author-info">
+                                <strong>Robert M.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"Incredible value for a 4-in-1 formula. I used to pay more for just Sildenafil.
+                            Bolt is a much better deal."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Mark H.">
+                            <div class="author-info">
+                                <strong>Mark H.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"The 36-hour window with Tadalafil in the mix gives me so much peace of mind.
+                            No more timing everything perfectly."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Steven P.">
+                            <div class="author-info">
+                                <strong>Steven P.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                            <img src="assets/mdi-star.svg" alt="Star">
+                        </div>
+                        <p class="quote">"My partner and I are both thrilled with the results. It's brought back a level
+                            of spontaneity we haven't had in years."</p>
+                        <div class="author-block">
+                            <img src="assets/sam-s.png" alt="Kevin W.">
+                            <div class="author-info">
+                                <strong>Kevin W.</strong>
+                                <span>Verified Bolt Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <img src="assets/product-box.png" alt="Product" style="max-width: 150px; margin: 0 auto;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bottom-cta text-center reveal-on-scroll">
+        <div class="waves-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,208,188,0.4)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,208,188,0.6)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,208,188,0.2)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#FFD0BC" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="title" style="font-size: 64px; font-family: var(--font-heading); line-height: 1;">Your Best
+                Performance <br><span class="gradient-text">is One Click Away.</span></h2>
+            <p class="description mt-4" style="max-width: 450px; margin: 24px auto;">Your private, 3-minute evaluation
+                is the first step. A licensed doctor is standing by to review your case.</p>
+            <div class="pricing-cta-wrap mt-4" style="display: flex; justify-content: center;">
+                <a href="#qualify" class="btn-black-pill">
+                    GET STARTED
+                    <span class="cta-circle">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="background: #111; color: white; padding: 24px 0;">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+            <img src="assets/logo.svg" alt="BoltForMan Logo"
+                style="height: 24px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+            <p style="opacity: 0.5; font-size: 14px;">© 2026 BoltForMen. All rights reserved</p>
+            <a href="#qualify" class="btn btn-primary">GET STARTED</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
