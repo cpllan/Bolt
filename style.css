@@ -315,6 +315,7 @@ body {
 
 .breakthrough {
     padding: 64px 0;
+    overflow: hidden;
 }
 
 .section-header {
@@ -1194,14 +1195,45 @@ body {
     opacity: 0.7;
 }
 
+/* Footer */
+.main-footer {
+    background: #111;
+    color: white;
+    padding: 24px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-logo {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.footer-copy {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
         height: auto;
-        min-height: 720px;
+        min-height: 750px;
         padding-top: 100px;
         padding-bottom: 32px;
         align-items: flex-end;
+    }
+
+    .hero-background {
+        top: -10%;
     }
 
     .hero-content {
@@ -1217,6 +1249,10 @@ body {
         font-size: 64px;
     }
 
+    .hero .btn {
+        width: 100%;
+    }
+
     .mobile-only {
         display: block;
     }
@@ -1229,34 +1265,107 @@ body {
         font-size: 48px;
     }
 
-    .feature-card,
-    .feature-card.reverse {
+    .feature-card {
         flex-direction: column;
+    }
+
+    .feature-card.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .feature-image {
+        flex: 0 0 320px;
+        height: 320px;
+    }
+
+    .feature-content {
+        padding: 32px 24px;
+    }
+
+    .performance-delivered .btn {
+        width: 100%;
     }
 
     .huge-title {
         font-size: 64px;
     }
 
+    .comparison-card {
+        padding: 18px;
+    }
+
     .ingredients-row {
         flex-direction: column;
     }
 
-    .pricing-card-wrapper {
+    .pricing-middle-row {
         flex-direction: column;
     }
 
-    .ingredient-item {
+    .formula-details-card,
+    .product-image-card,
+    .pricing-bottom-card {
+        width: 100%;
+        position: relative;
+    }
+
+    .formula-details-card {
+        padding: 18px;
+    }
+
+    .pricing-bottom-card {
+        padding: 18px;
+        padding-top: 60px;
+    }
+
+    .popular-badge {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    .price-display {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .save-pill {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pricing-cta-wrap {
         width: 100%;
     }
 
-    .pricing-header {
+    .btn-black-pill {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bottom-card-benefits {
         flex-direction: column;
-        gap: 16px;
+        overflow-x: visible;
+        gap: 4px;
+    }
+
+    .benefit-item {
+        width: 100%;
+    }
+
+    .step-card .subtitle {
+        text-transform: uppercase;
     }
 
     .steps-wrapper {
         flex-direction: column;
+    }
+
+    .main-footer .container.footer-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .testimonials-grid {
@@ -1276,6 +1385,43 @@ body {
         width: 100%;
         max-width: 320px;
         margin: 0 auto;
+    }
+
+    .bottom-cta {
+        padding-top: 0px;
+    }
+
+    .faq-section {
+        padding-top: 0px;
+    }
+
+    .mt-4 {
+        margin-top: 0px;
+    }
+
+    .testimonials {
+        padding-top: 0px;
+    }
+
+    .testimonials-scroll {
+        padding-top: 0px;
+    }
+
+    .pricing-section {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .breakthrough {
+        padding: 0px;
+    }
+
+    .section-header {
+        padding-top: 32px;
+    }
+
+    .why-settle {
+        padding-top: 0px;
     }
 }
 
