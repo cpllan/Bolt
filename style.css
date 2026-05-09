@@ -1257,6 +1257,10 @@ body {
         display: block;
     }
 
+    .desktop-only {
+        display: none;
+    }
+
     .stats-grid {
         flex-direction: column;
     }
@@ -1385,6 +1389,10 @@ body {
         width: 100%;
         max-width: 320px;
         margin: 0 auto;
+    }
+
+    .card-image img {
+        max-width: 240px;
     }
 
     .bottom-cta {
