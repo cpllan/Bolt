@@ -371,6 +371,29 @@ body {
     display: inline-block;
 }
 
+.quad-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: -32px;
+    margin-bottom: 64px;
+    position: relative;
+    z-index: 20;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #fdb04b;
+    transform: scale(1.2);
+}
+
 .nav-arrow {
     background: white;
     border: none;

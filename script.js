@@ -34,23 +34,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('quad-prev');
     
     if (quadStack && cards.length > 0) {
-        let positions = ['front', 'left', 'right'];
+        let positions = ['front', 'right', 'left'];
+        const dots = Array.from(document.querySelectorAll('.quad-dots .dot'));
         
         function updateCards() {
             cards.forEach((card, index) => {
                 card.className = `quad-power-card card-item position-${positions[index]}`;
             });
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', positions[index] === 'front');
+            });
         }
         
         function nextCard() {
-            // Shift positions: front -> left, left -> right, right -> front
-            positions.push(positions.shift());
+            // Shift positions: front -> right, right -> left, left -> front
+            positions.unshift(positions.pop());
             updateCards();
         }
         
         function prevCard() {
-            // Shift positions: front -> right, right -> left, left -> front
-            positions.unshift(positions.pop());
+            // Shift positions: front -> left, left -> right, right -> front
+            positions.push(positions.shift());
             updateCards();
         }
         
