@@ -166,6 +166,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Mobile Testimonial Scrollbar logic
+    const testimonialContainer = document.querySelector('.testimonials-horizontal-container');
+    const testimonialThumb = document.getElementById('testimonial-thumb');
+
+    if (testimonialContainer && testimonialThumb) {
+        const updateThumb = () => {
+            if (window.innerWidth >= 1024) return;
+            
+            const scrollLeft = testimonialContainer.scrollLeft;
+            const scrollWidth = testimonialContainer.scrollWidth;
+            const clientWidth = testimonialContainer.clientWidth;
+            
+            // Calculate thumb width based on visible ratio
+            const thumbWidth = Math.max((clientWidth / scrollWidth) * 100, 15); // Minimum 15% width
+            // Calculate how much we can move the thumb (100% - thumbWidth%)
+            const maxTravel = 100 - thumbWidth;
+            // Calculate scroll percentage of the total scrollable area
+            const scrollPercent = scrollLeft / (scrollWidth - clientWidth);
+            
+            testimonialThumb.style.width = `${thumbWidth}%`;
+            testimonialThumb.style.left = `${scrollPercent * maxTravel}%`;
+        };
+
+        testimonialContainer.addEventListener('scroll', updateThumb, { passive: true });
+        window.addEventListener('resize', updateThumb);
+        // Initial call
+        updateThumb();
+    }
+
     // Quad Advantage Horizontal Scroll
     const advantageSection = document.getElementById('quad-advantage');
     const advantageTrack = document.querySelector('.advantage-track');
