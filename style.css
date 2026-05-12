@@ -561,16 +561,67 @@ body {
 /* The Quad Advantage Section */
 .quad-advantage {
     padding: 64px 0;
+    position: relative;
 }
 
-.advantage-cards {
-    margin-top: 64px;
+.advantage-sticky-wrapper {
+    position: relative;
+}
+
+.advantage-horizontal-container {
+    overflow: hidden;
+    padding: 32px 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.advantage-track {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding: 0 20px;
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .quad-advantage {
+        height: 300vh;
+        padding: 0;
+    }
+
+    .advantage-sticky-wrapper {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .advantage-track {
+        flex-direction: row;
+        gap: 80px;
+        width: max-content;
+        padding: 0;
+        margin: 0;
+        transition: transform 0.1s ease-out;
+    }
+
+    .feature-card {
+        width: 700px;
+        flex-shrink: 0;
+        flex-direction: row !important;
+    }
+
+    .feature-image {
+        flex: 0 0 350px;
+    }
+
+    .feature-content {
+        padding: 40px;
+    }
 }
 
 .feature-card {
@@ -583,14 +634,6 @@ body {
 
 .feature-card.reverse {
     flex-direction: row-reverse;
-}
-
-.feature-image {
-    flex: 0 0 320px;
-}
-
-.feature-content {
-    flex: 1;
 }
 
 .feature-image img {
@@ -1142,21 +1185,67 @@ body {
 /* Testimonials */
 .testimonials {
     padding: 64px 0;
+    position: relative;
+    background-color: var(--bg-light);
 }
 
-.testimonials-scroll {
-    overflow: hidden;
-    padding: 48px 0;
+.testimonials-sticky-wrapper {
+    position: relative;
+}
+
+.testimonials-horizontal-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 32px 0;
     position: relative;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonials-horizontal-container::-webkit-scrollbar {
+    display: none;
 }
 
 .testimonials-track {
     display: flex;
-    gap: 32px;
+    gap: 24px;
     width: max-content;
-    animation: scroll-testimonials 60s linear infinite;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: transform 0.1s ease-out;
+}
+
+/* Desktop Horizontal Scroll Logic */
+@media (min-width: 1024px) {
+    .testimonials {
+        height: 300vh; /* Scroll distance fallback */
+        padding: 0;
+    }
+
+    .testimonials-horizontal-container {
+        overflow: hidden;
+    }
+
+    .testimonials-sticky-wrapper {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .testimonials-track {
+        animation: none; /* Disable autoscroll on desktop */
+    }
+
+    .testimonials-track:hover {
+        animation: none;
+    }
 }
 
 @keyframes scroll-testimonials {
@@ -1176,15 +1265,16 @@ body {
 .testimonial-card {
     background: #F6F6F6;
     border-radius: 32px;
-    padding: 40px;
-    width: 340px;
+    padding: 32px;
+    width: 320px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 32px;
+    gap: 24px;
+    scroll-snap-align: center;
 }
 
 .testimonial-card .stars {

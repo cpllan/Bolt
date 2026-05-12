@@ -131,4 +131,94 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initial call to set positions
         handleParallax();
     }
+
+    // Testimonial Horizontal Scroll
+    const testimonialsSection = document.getElementById('testimonials');
+    const testimonialsTrack = document.querySelector('.testimonials-track');
+    
+    function handleTestimonialScroll() {
+        if (window.innerWidth < 1024 || !testimonialsSection || !testimonialsTrack) {
+            // Reset on mobile
+            if (testimonialsTrack) testimonialsTrack.style.transform = '';
+            if (testimonialsSection) testimonialsSection.style.height = '';
+            return;
+        }
+        
+        const trackWidth = testimonialsTrack.scrollWidth;
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const maxHorizontalScroll = trackWidth - viewportWidth;
+        
+        const totalHeight = maxHorizontalScroll + viewportHeight;
+        testimonialsSection.style.height = `${totalHeight}px`;
+        
+        const sectionTop = testimonialsSection.offsetTop;
+        const scrolled = window.pageYOffset;
+        const start = sectionTop;
+        const end = sectionTop + maxHorizontalScroll;
+        
+        if (scrolled >= start && scrolled <= end) {
+            testimonialsTrack.style.transform = `translateX(-${scrolled - start}px)`;
+        } else if (scrolled < start) {
+            testimonialsTrack.style.transform = `translateX(0)`;
+        } else if (scrolled > end) {
+            testimonialsTrack.style.transform = `translateX(-${maxHorizontalScroll}px)`;
+        }
+    }
+
+    // Quad Advantage Horizontal Scroll
+    const advantageSection = document.getElementById('quad-advantage');
+    const advantageTrack = document.querySelector('.advantage-track');
+    const advantageCards = document.querySelectorAll('.advantage-track .feature-card');
+
+    function handleAdvantageScroll() {
+        if (window.innerWidth < 1024 || !advantageSection || !advantageTrack || advantageCards.length === 0) {
+            if (advantageTrack) advantageTrack.style.transform = '';
+            if (advantageSection) advantageSection.style.height = '';
+            return;
+        }
+
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const cardWidth = advantageCards[0].offsetWidth;
+        const trackWidth = advantageTrack.scrollWidth;
+        
+        // Initial offset to center the first card
+        const initialOffset = (viewportWidth - cardWidth) / 2;
+        
+        // Max scroll distance: we want the last card to end up centered
+        const totalHorizontalDistance = trackWidth - cardWidth;
+        
+        // Set section height
+        const totalSectionHeight = totalHorizontalDistance + viewportHeight;
+        advantageSection.style.height = `${totalSectionHeight}px`;
+
+        const sectionTop = advantageSection.offsetTop;
+        const scrolled = window.pageYOffset;
+        const start = sectionTop;
+        const end = sectionTop + totalHorizontalDistance;
+
+        if (scrolled >= start && scrolled <= end) {
+            const currentTranslate = initialOffset - (scrolled - start);
+            advantageTrack.style.transform = `translateX(${currentTranslate}px)`;
+        } else if (scrolled < start) {
+            advantageTrack.style.transform = `translateX(${initialOffset}px)`;
+        } else if (scrolled > end) {
+            advantageTrack.style.transform = `translateX(${initialOffset - totalHorizontalDistance}px)`;
+        }
+    }
+
+    window.addEventListener('scroll', () => {
+        handleTestimonialScroll();
+        handleAdvantageScroll();
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+        handleTestimonialScroll();
+        handleAdvantageScroll();
+    });
+
+    // Initialize
+    handleTestimonialScroll();
+    handleAdvantageScroll();
 });
